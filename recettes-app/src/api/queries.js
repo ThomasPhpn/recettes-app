@@ -29,3 +29,14 @@ export const GET_RECIPES = gql`
     }
   }
 `;
+
+export const GET_FOOTER_PAGES = gql`
+  {
+    pages {
+      nodes {
+        title
+        slug
+      }
+    }
+  }
+`;

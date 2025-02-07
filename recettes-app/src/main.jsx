@@ -5,6 +5,7 @@ import client from "./api/apolloClient";
 import App from "./App";
 import RecipePage from "./pages/RecipePage";
 import "./index.css";
+import Page from "./pages/Page";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ApolloProvider client={client}>
@@ -12,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/recette/:slug" element={<RecipePage />} />{" "}
-        {/* ✅ Vérifie bien que `:slug` est présent */}
+        <Route path="/page/:slug" element={<Page />} />{" "}
       </Routes>
     </Router>
   </ApolloProvider>
