@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-function RecipeCard({ slug, title, image, categories = [], tags = [], note }) {
+function RecipeCard({ slug, title, image, note }) {
   console.log(`Note reçue pour ${title} :`, note); // 🛠 Debug : voir la valeur exacte de `note`
 
   const renderStars = (note) => {

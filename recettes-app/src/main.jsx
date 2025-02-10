@@ -6,6 +6,8 @@ import App from "./App";
 import RecipePage from "./pages/RecipePage";
 import "./index.css";
 import Page from "./pages/Page";
+import SaisonPage from "./pages/SaisonPage";
+import VinsPage from "./pages/VinsPage";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ApolloProvider client={client}>
@@ -14,6 +16,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />} />
         <Route path="/recette/:slug" element={<RecipePage />} />{" "}
         <Route path="/page/:slug" element={<Page />} />{" "}
+        <Route path="/saison" element={<SaisonPage />} />{" "}
+        <Route path="/vins" element={<VinsPage />} />{" "}
       </Routes>
     </Router>
   </ApolloProvider>

@@ -2,6 +2,7 @@ import { useQuery } from "@apollo/client";
 import { GET_RECIPES } from "./api/queries";
 import RecipeCard from "./components/RecipeCard";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   const { loading, error, data } = useQuery(GET_RECIPES);
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Navbar />
       <main className="flex-grow max-w-5xl mx-auto p-6">
         <h1 className="text-4xl font-bold text-center mb-8 text-blue-600">
           🍽️ Mes Recettes
@@ -36,7 +38,7 @@ function App() {
           ))}
         </div>
       </main>
-      <Footer /> {/* ✅ Footer ajouté ici */}
+      <Footer />
     </div>
   );
 }
