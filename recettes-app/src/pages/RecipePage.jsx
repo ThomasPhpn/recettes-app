@@ -65,15 +65,6 @@ function RecipePage() {
           className="text-gray-700 text-lg"
           dangerouslySetInnerHTML={{ __html: data.post.content }}
         />
-
-        <div className="text-center mt-8">
-          <Link
-            to="/"
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition"
-          >
-            🏠 Retour à l'accueil
-          </Link>
-        </div>
       </main>
 
       {/* ✅ Footer placé en dehors du contenu principal */}
