@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { gql } from "@apollo/client";
 import Footer from "../components/Footer";
@@ -62,7 +62,7 @@ function RecipePage() {
           />
         )}
         <div
-          className="text-gray-700 text-lg"
+          className="text-gray-700 text-lg list-disc list-inside"
           dangerouslySetInnerHTML={{ __html: data.post.content }}
         />
       </main>

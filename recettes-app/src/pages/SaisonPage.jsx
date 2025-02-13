@@ -18,14 +18,9 @@ function SaisonPage() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="max-w-5xl mx-auto p-6 flex-grow">
-        <h1 className="text-4xl font-bold text-center mb-8 text-green-600">
-          🌱 Fruits et Légumes de Saison
+        <h1 className="text-4xl font-bold text-center mb-8 text-mint">
+          Fruits et Légumes de Saison
         </h1>
-
-        <p className="text-center text-gray-700 mb-6">
-          Découvrez quels fruits et légumes sont de saison en ce moment pour une
-          alimentation plus durable !
-        </p>
 
         {/* ✅ Conteneur pour insérer l'iframe dynamiquement */}
         <div id="iframe-container" className="flex justify-center"></div>

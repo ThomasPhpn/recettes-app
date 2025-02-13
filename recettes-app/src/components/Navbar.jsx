@@ -1,24 +1,29 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
-  return (
-    <nav className="shadow-celadon p-4">
-      <div className="max-w-5xl mx-auto flex justify-between items-center">
-        <h1>
-          <Link to="/" className="text-2xl font-bold text-raspberry">
-            Ma Cuisine
-          </Link>
-        </h1>
+  const location = useLocation();
 
-        <ul className="flex space-x-6 text-lg font-bold text-mint hover:text-emerald-900">
-          <li>
-            <Link to="/saison">Fruits & Légumes</Link>
-          </li>
-          <li>
-            <Link to="/vins">Mes Vins</Link>
-          </li>
-        </ul>
-      </div>
+  const isActive = (path) => location.pathname === path;
+
+  return (
+    <nav className="shadow-md bg-champagne p-4">
+      <ul className="max-w-5xl mx-auto flex justify-center space-x-8 text-lg font-bold text-raspberry">
+        <li>
+          <Link to="/" className={isActive("/") ? "underline" : ""}>
+            Mes Recettes
+          </Link>
+        </li>
+        <li>
+          <Link to="/saison" className={isActive("/saison") ? "underline" : ""}>
+            Fruits & Légumes
+          </Link>
+        </li>
+        <li>
+          <Link to="/vins" className={isActive("/vins") ? "underline" : ""}>
+            Mes Vins
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 }

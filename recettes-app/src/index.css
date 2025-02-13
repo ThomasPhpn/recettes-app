@@ -1,21 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Delius+Unicase:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&family=Mitr:wght@400;700&family=Montserrat+Alternates:wght@400;700&display=swap");
 @import "tailwindcss";
 
 /* ✅ Appliquer la police globale */
 body {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 /* ✅ Définir les couleurs */
 :root {
-  --color-celadon: #b9e3c6;
+  --color-champagne: #ffead0;
   --color-mint: #59c9a5;
   --color-raspberry: #d81e5b;
 }
 
 /* ✅ Appliquer la couleur de fond et du texte */
-.bg-celadon {
-  background-color: var(--color-celadon);
+.bg-champagne {
+  background-color: var(--color-champagne);
 }
 .bg-mint {
   background-color: var(--color-mint);
@@ -23,8 +23,8 @@ body {
 .bg-raspberry {
   background-color: var(--color-raspberry);
 }
-.text-celadon {
-  color: var(--color-celadon);
+.text-champagne {
+  color: var(--color-champagne);
 }
 .text-mint {
   color: var(--color-mint);
@@ -32,12 +32,14 @@ body {
 .text-raspberry {
   color: var(--color-raspberry);
 }
-.shadow-celadon {
-  box-shadow: 0px 2px 15px 2px #b9e3c6;
+.border-champagne {
+  border-color: var(--color-champagne);
 }
 
-h1,
+h1 {
+  font-family: "Fira Sans Condensed";
+}
 h2,
 h3 {
-  font-family: "Delius Unicase", cursive;
+  font-family: "Mitr", cursive;
 }

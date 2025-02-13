@@ -44,17 +44,17 @@ function VinsPage() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="max-w-5xl mx-auto p-6 flex-grow">
-        <h1 className="text-4xl font-bold text-center mb-8 text-red-600">
-          🍷 Mes Vins Préférés
+        <h1 className="text-4xl font-bold text-center mb-8 text-mint">
+          Mes Vins
         </h1>
 
         {[
-          { title: "Vins Rouges", wines: vinsRouges, color: "text-red-600" },
-          { title: "Vins Blancs", wines: vinsBlancs, color: "text-yellow-600" },
-          { title: "Vins Rosés", wines: vinsRoses, color: "text-pink-600" },
+          { title: "Vins Rouges", wines: vinsRouges },
+          { title: "Vins Blancs", wines: vinsBlancs },
+          { title: "Vins Rosés", wines: vinsRoses },
         ].map(({ title, wines, color }) => (
           <section key={title} className="mb-10">
-            <h2 className={`text-2xl font-bold mb-4 ${color}`}>{title}</h2>
+            <h2 className={`text-2xl font-bold mb-4 text-mint`}>{title}</h2>
             {wines.length === 0 ? (
               <p className="text-gray-500">Aucun vin ajouté.</p>
             ) : (
@@ -62,7 +62,7 @@ function VinsPage() {
                 {wines.map((vin) => (
                   <li
                     key={vin.title}
-                    className="p-4 border rounded-lg shadow-md"
+                    className="p-4 border border-champagne rounded-lg"
                   >
                     <h3 className="text-xl font-bold">
                       {vin.title} ({vin.detailsVin.year})

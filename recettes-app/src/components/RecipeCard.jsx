@@ -23,7 +23,7 @@ function RecipeCard({ slug, title, image, note }) {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="bg-champagne shadow-lg rounded-lg overflow-hidden">
       <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
         <h2 className="text-xl font-bold text-gray-800">{title}</h2>
@@ -33,7 +33,7 @@ function RecipeCard({ slug, title, image, note }) {
 
         <Link
           to={`/recette/${slug}`}
-          className="text-blue-600 font-semibold mt-4 inline-block"
+          className="text-raspberry font-semibold mt-4 inline-block"
         >
           Voir la recette →
         </Link>

@@ -27,9 +27,9 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-100 text-center p-4 mt-10">
+    <footer className="bg-champagne text-center p-4 mt-10">
       <nav>
-        <ul className="flex justify-center space-x-6 text-blue-600">
+        <ul className="flex justify-center space-x-6 text-raspberry">
           {data.pages.nodes
             .filter((page) => validPages.includes(page.title)) // Filtrage des pages
             .map((page) => (
@@ -39,7 +39,7 @@ function Footer() {
             ))}
         </ul>
       </nav>
-      <p className="text-gray-500 mt-2">
+      <p className="text-black mt-2">
         © {new Date().getFullYear()} Recettes de Thomas
       </p>
     </footer>
